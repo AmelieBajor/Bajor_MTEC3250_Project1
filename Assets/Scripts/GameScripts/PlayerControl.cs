@@ -67,13 +67,15 @@ public class PlayerControl : MonoBehaviour
     private void MovingFinished()
     {
         if (animatorController == null) return;
-
+        animator.SetBool("WalkDown", false);
+        animator.SetBool("WalkUp", false);
+        animator.SetBool("WalkSide", false);
         //Code for resetting animator bools go here
     }
 
     private void ChangeFacingDirection(Vector3 _direction)
     {
-                if (animatorController == null) return;
+        if (animatorController == null) return;
 
         if (_direction == Vector3.down)
         {
@@ -117,6 +119,7 @@ public class PlayerControl : MonoBehaviour
 
         }
     }
+
 
 
 
