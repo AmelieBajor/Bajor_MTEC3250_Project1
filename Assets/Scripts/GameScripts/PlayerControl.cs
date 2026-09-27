@@ -361,7 +361,7 @@ public class PlayerControl : MonoBehaviour
         var pos = transform.position + (direction * offsetScaler);
         GameObject go = Instantiate(projectilePrefab, pos, Quaternion.identity);
         var rend = go.GetComponentInChildren<SpriteRenderer>();
-        if (rotationEnabled) { rend.transform.localRotation = transform.rotation; }
+        rend.transform.localRotation = transform.rotation;
        
         var pjt = go.GetComponent<Projectile>();
         pjt.speed = projectileSpeed;
@@ -372,6 +372,7 @@ public class PlayerControl : MonoBehaviour
         ProjectileFired?.Invoke(pos);
 
     }
+    
 
     //We move the player in a coroutine by sending a start and an end pos and just lerping between then
     //for the duration set. The duration is currently 1/ moveSpeed 

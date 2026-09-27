@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: ef90abcc2dcdf4cf3a233037f9d6e484
+guid: e18f6022ee43d4390991b0d33d3f9188
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1362824055717985847
-    second: Beast_Idle1_20260921161122_0
+      213: -8697011467065031481
+    second: Cross Projectile 4_0
+  - first:
+      213: 4783835778334941407
+    second: Cross Projectile 4_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1400
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,23 +116,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Beast_Idle1_20260921161122_0
+      name: Cross Projectile 4_0
       rect:
         serializedVersion: 2
-        x: 36
-        y: 84
-        width: 1963
-        height: 1937
+        x: 0
+        y: 0
+        width: 640
+        height: 640
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 73e7d641249b9e210800000000000000
-      internalID: 1362824055717985847
+      spriteID: 7c4071246220e4780800000000000000
+      internalID: -8697011467065031481
       vertices: []
       indices: 
       edges: []
@@ -138,7 +141,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f5842ba915c014741bae85792167b780
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +149,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":640.0,"y":640.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Beast_Idle1_20260921161122_0: 1362824055717985847
+      Cross Projectile 4_0: -8697011467065031481
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
