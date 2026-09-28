@@ -125,11 +125,37 @@ public class PlayerControl : MonoBehaviour
 
     private void EnteredTrap(Vector3 _direction)
     {
+
         if (animatorController == null) return;
 
         if (!rotationEnabled)
         {
-            //Animator code goes here if not using Player Rotation 
+            if (_direction == Vector3.down)
+        {
+            animator.SetTrigger("DownInjure");
+            //Animator code goes here for this state
+        }
+
+        if (_direction == Vector3.up)
+        {
+            animator.SetTrigger("UpInjure");
+            //Animator code goes here for this state
+        }
+
+        if (_direction == Vector3.left)
+        {
+            animator.SetTrigger("SideInjure");
+            rend.flipX = false;
+            //Animator code goes here for this state
+        }
+
+        if (_direction == Vector3.right)
+        {
+            animator.SetTrigger("SideInjure");
+            rend.flipX = true;
+            //Animator code goes here for this state
+        }
+
         }
         else
         {
